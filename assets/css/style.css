@@ -1,0 +1,33 @@
+/* crear areas para el grid - definir nombres */
+
+
+header {
+    grid-area: header;
+   
+}
+
+.ingresoTareas {
+    grid-area: main;
+   
+}
+
+.contadorTareas {
+    grid-area: count;
+    
+}
+
+section {
+    grid-area: list;
+   
+}
+
+/* definir sector para las areas, en este caso 2 columnas */
+
+.grid-container {
+display: grid;
+grid-template-areas: 
+"header header"
+"main main"
+"count list";
+gap: 10px;
+}
