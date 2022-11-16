@@ -5,66 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Layout</title>
+    <title>Clase de funciones</title>
 </head>
 <body>
     
-
-<div class="grid-container">
-    <header>
-        <h1>To-Do List </h1>
-    </header>
+  
+   
 
 
 
-    <div class="ingresoTareas">
-         <h2>Nueva Tarea</h2>
-         <input type="text"
-         id="input-tarea"
-         name="tarea"
-         placeholder="Ingresa tarea"
-         
-       ></input>
-<button id="btnAgregar" class="boton">Agregar</button>
-    </div>
 
 
-
-    <div class="contadorTareas">
-       <p>Total: <span id="totalTareas"></span></p> 
-        <p>Realizadas: <span id="realizadasTareas"></span></p>
-    </div>
-
-
+    <div class="grid-container">
+        <header>
+            <h1>To-Do List </h1>
+        </header>
     
-    <div class="tablaDeTareas">
-        <table>
-            <thead>
-                <tr>
-                    <th><b>ID</b></th>
-                    <th><b>Tarea</b></th>
-                </tr>
-            </thead>
-            <tbody id="tbody"> 
-
-            <!--     <tr>
-                    <td>1</td>
-                    <td>Ejemplo</td>
-                    <td><input type="checkbox" id="cbox1" value="first_checkbox"></td>
-                </tr>
-
-                <tr>
-                    <td>2</td>
-                    <td><strike>Ejemplo realizado</strike></td>
-                    <td><input type="checkbox" id="cbox1" value="first_checkbox"></td>
-                </tr> -->
-
-            </tbody>
-        </table>
+    
+    
+        <div class="ingresoTareas">
+             <h2>Nueva Tarea</h2>
+             <input type="text"
+             id="nuevaTarea"
+             name="tarea"
+             placeholder="Ingresa tarea"
+             
+           ></input>
+    <button id="agregarTarea" class="boton">Agregar</button>
+        </div>
+    
+    
+    
+        <div class="contadorTareas">
+           <p>Total: <span id="totalTareas"></span></p> 
+            <p>Realizadas: <span id="realizadasTareas"></span></p>
+        </div>
+    
+    
+        
+        <div class="tablaDeTareas">
+           
+            <table>
+                <thead>
+                    <tr>
+                        <th><b>ID</b></th>
+                        <th><b>Tarea</b></th>
+                    </tr>
+                </thead>
+                <tbody id="tareas"> 
+    
+                <!--     <tr>
+                        <td>1</td>
+                        <td>Ejemplo</td>
+                        <td><input type="checkbox" id="cbox1" value="first_checkbox"></td>
+                    </tr>
+    
+                    <tr>
+                        <td>2</td>
+                        <td><strike>Ejemplo realizado</strike></td>
+                        <td><input type="checkbox" id="cbox1" value="first_checkbox"></td>
+                    </tr> -->
+    
+                </tbody>
+            </table>
+        </div>
     </div>
-</div>
 
 
-<script src="./assets/JS/listado.js"></script>
+
+
+
+    <script src="./assets/js/funciones.js">
+    
+    </script>
+
 </body>
 </html>
